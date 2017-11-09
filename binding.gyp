@@ -12,18 +12,18 @@
             "xcode_settings": {
               "OTHER_CFLAGS": [
                 "-Wno-error=unused-command-line-argument",
-                "<!(/usr/bin/python-config --cflags)"
+                "<!(/usr/bin/python3-config --cflags)"
               ],
               "OTHER_LDFLAGS": [
-                "<!(/usr/bin/python-config --ldflags)"
+                "<!(/usr/bin/python3-config --ldflags)"
               ]
             }
         }, { # not OSX
           "cflags": [
-            "<!(python-config --cflags)"
+            "<!(python3-config --cflags)"
           ],
           "libraries": [
-            "<!(python-config --libs)"
+            "<!(python3-config --libs)"
           ]
         }]
       ]
